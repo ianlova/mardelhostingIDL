@@ -1,0 +1,139 @@
+*{  padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    .topbar{
+        text-align: center;
+        background-image: linear-gradient(135deg, #EF75A2, #DB5C60, #8E00C2, #2D35A8, #2097B0);
+        position: sticky;
+        top: 0;
+        height: 50px;
+        background-size: 500%;
+        animation: animacion 10s infinite;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        }
+.topbar a{
+    margin: auto;
+    font-size: 15px;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: black;
+    transition: .3s ease-out all;
+    padding: 0px 5px 0 5px;
+    text-decoration: none;
+    }
+.topbar a:hover{
+    background-color: rgba(0, 0, 0, 0.342);
+    color: white;
+    text-decoration: none;
+    text-shadow: 1.5px 1.5px 2.5px rgba(0, 0, 0, 0.596);
+    }
+body{
+    background-color: black;
+    background-size: 500%;
+    animation: animacion 10s infinite;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    }
+footer .navbar{
+    position: sticky;
+    bottom: 0;
+    }
+.bottombar{
+    text-align: center;
+    background: white;
+    position: sticky;
+    bottom: 0;
+    background-size: 500%;
+}
+footer{
+    color: white;
+}
+h1{
+    font-size: 2rem;    
+    margin-left: 100px;
+    margin-top: 25px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inputs{    
+    color: white;    
+    text-align: center;
+    padding: 35px 0;    
+    height: 70%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;        
+    align-items: center;
+    justify-content: space-evenly;
+    }
+.inputs div{
+    width: 25%;
+    height: 50%;     
+    position: relative;
+    } 
+    .inputs div input{
+        position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 50%;
+    cursor: pointer;
+    }
+    .inputs div img{
+        width: 100%;
+        height: auto;    
+        animation: pulse 10s;
+    }
+    .inputs div input#1:active{
+        transform: scale(1.1);
+    }
+    .inputs div input#1:focus{
+        transform: scale(1.1);
+    }
+    .inputs div input#1:target{
+        transform: scale(1.1);
+    }
+    .inputs div input#1:hover{
+        transform: scale(1.1);
+    }
+.pulse:focus,.pulse:hover{-webkit-animation:pulse 1s;animation:pulse 1s;box-shadow:0 0 0 2em rgba(255,255,255,0)}
+@-webkit-keyframes pulse{0%{box-shadow:0 0 var(--hover)}}
+@keyframes pulse{0%{box-shadow:0 0 var(--hover)}}
+.raise:focus,.raise:hover{box-shadow:0 .5em .5em -.4em var(--hover);-webkit-transform:translateY(-.25em);transform:translateY(-.25em)}
+.pulse{--color:#ef6e6e;--hover:#ff0000}
+.raise{--color:#ffa260;--hover:#ff0000}
+
+.resto div{
+    margin: 1000px auto;
+    text-align: center;
+    padding: 20px 0;}
+
+
+
+
+
+
+
+@keyframes animacion{
+    0%{
+    background-position: 0% 50%;
+    }
+    50%{
+    background-position: 100% 50%;
+    }
+    100%{
+    background-position: 0% 50%;
+    }
+    }
